@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "realisations",
+  "info": {
+    "singularName": "realisation",
+    "pluralName": "realisations",
+    "displayName": "Realisation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "realisations"
+    },
+    "colors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::color.color",
+      "mappedBy": "realisations"
+    },
+    "styles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::style.style",
+      "mappedBy": "realisations"
+    },
+    "materiaux": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::material.material",
+      "inversedBy": "realisations"
+    },
+    "caracteristiques": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::feature.feature",
+      "inversedBy": "realisations"
+    },
+    "franchises": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::franchise.franchise",
+      "inversedBy": "realisations"
+    }
+  }
+}

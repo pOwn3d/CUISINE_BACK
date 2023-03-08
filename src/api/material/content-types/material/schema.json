@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "singularName": "material",
+    "pluralName": "materials",
+    "displayName": "Matériaux"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "mappedBy": "materiaux"
+    }
+  }
+}
