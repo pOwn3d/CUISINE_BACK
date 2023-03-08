@@ -12,10 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "uid"
+    "hero_text": {
+      "type": "string"
     },
-    "header_img": {
+    "hero_subtitle": {
+      "type": "string"
+    },
+    "hero_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -26,21 +29,13 @@
         "audios"
       ]
     },
-    "header": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "bloc_one_title": {
+      "type": "string"
     },
-    "bloc_1": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "bloc_one_long_text": {
+      "type": "text"
     },
-    "bloc_1_img": {
+    "bloc_one_img": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -51,14 +46,19 @@
         "audios"
       ]
     },
-    "bloc_2_title": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "bloc_two_title": {
+      "type": "string"
     },
-    "bloc_img_1": {
+    "bloc_two_long_text": {
+      "type": "text"
+    },
+    "bloc_methode_one_title": {
+      "type": "string"
+    },
+    "bloc_methode_one_subtitle": {
+      "type": "text"
+    },
+    "bloc_methode_one_picto": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -69,13 +69,13 @@
         "audios"
       ]
     },
-    "bloc_title_1": {
+    "bloc_methode_two_title": {
       "type": "string"
     },
-    "bloc_p_1": {
-      "type": "string"
+    "bloc_methode_two_subtitle": {
+      "type": "text"
     },
-    "bloc_img_2": {
+    "bloc_methode_two_picto": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -86,13 +86,13 @@
         "audios"
       ]
     },
-    "bloc_title_2": {
+    "bloc_methode_three_title": {
       "type": "string"
     },
-    "bloc_p_2": {
-      "type": "string"
+    "bloc_methode_three_subtitle": {
+      "type": "text"
     },
-    "bloc_img_3": {
+    "bloc_methode_three_picto": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -103,13 +103,13 @@
         "audios"
       ]
     },
-    "bloc_title_3": {
+    "bloc_methode_four_title": {
       "type": "string"
     },
-    "bloc_p_3": {
-      "type": "string"
+    "bloc_methode_four_subtitle": {
+      "type": "text"
     },
-    "bloc_img_4": {
+    "bloc_methode_four_picto": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -120,13 +120,7 @@
         "audios"
       ]
     },
-    "bloc_title_4": {
-      "type": "string"
-    },
-    "bloc_p_4": {
-      "type": "string"
-    },
-    "bloc_img": {
+    "bloc_three_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -137,21 +131,19 @@
         "audios"
       ]
     },
-    "bloc_img_texte": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "bloc_three_text": {
+      "type": "text"
     },
-    "bloc_4": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "bloc_realisation_title": {
+      "type": "string"
     },
-    "bloc_4_img_1": {
+    "bloc_realisation_subtitle": {
+      "type": "text"
+    },
+    "bloc_project_title": {
+      "type": "string"
+    },
+    "bloc_projet_picto_one": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -162,13 +154,13 @@
         "audios"
       ]
     },
-    "bloc_4_title_1": {
+    "bloc_projet_picto_one_title": {
       "type": "string"
     },
-    "bloc_4_subtitle_1": {
-      "type": "string"
+    "bloc_projet_picto_one_subtitle": {
+      "type": "text"
     },
-    "bloc_4_img_2": {
+    "bloc_projet_picto_two": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -179,13 +171,13 @@
         "audios"
       ]
     },
-    "bloc_4_title_2": {
+    "bloc_projet_picto_two_title": {
       "type": "string"
     },
-    "bloc_4_subtitle_2": {
-      "type": "string"
+    "bloc_projet_picto_two_subtitle": {
+      "type": "text"
     },
-    "bloc_4_img_3": {
+    "bloc_projet_picto_three": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -196,25 +188,16 @@
         "audios"
       ]
     },
-    "bloc_4_title_3": {
+    "bloc_projet_picto_three_title": {
       "type": "string"
     },
-    "bloc_4_subtitle_3": {
-      "type": "string"
+    "bloc_projet_picto_three_subtitle": {
+      "type": "text"
     },
-    "bloc_4_cta": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
-    "bloc_5": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
+    "partner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partner.partner"
     }
   }
 }
