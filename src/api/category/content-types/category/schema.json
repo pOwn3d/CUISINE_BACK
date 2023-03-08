@@ -20,6 +20,12 @@
       "relation": "manyToMany",
       "target": "api::realisation.realisation",
       "inversedBy": "categories"
+    },
+    "franchises": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::franchise.franchise",
+      "mappedBy": "categories"
     }
   }
 }
