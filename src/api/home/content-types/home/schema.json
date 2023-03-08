@@ -4,7 +4,7 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "home",
+    "displayName": "Accueil",
     "description": ""
   },
   "options": {
@@ -193,11 +193,6 @@
     },
     "bloc_projet_picto_three_subtitle": {
       "type": "text"
-    },
-    "partner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "partner.partner"
     }
   }
 }
