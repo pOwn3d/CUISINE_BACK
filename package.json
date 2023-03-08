@@ -27,8 +27,8 @@
     "uuid": "a733943a-1723-42cb-a816-d935abdc00ff"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=18.x.x",
+    "npm": ">=9.0.0"
   },
   "workspaces": [
     "./src/plugins/strapi-plugin-ckeditor"
