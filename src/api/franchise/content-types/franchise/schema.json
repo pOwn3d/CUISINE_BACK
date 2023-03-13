@@ -44,6 +44,24 @@
     },
     "email": {
       "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "google_id": {
+      "type": "string"
+    },
+    "realisation_star": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::realisation.realisation",
+      "mappedBy": "franchise_star"
     }
   }
 }

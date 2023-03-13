@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_projects",
+  "info": {
+    "singularName": "type-project",
+    "pluralName": "type-projects",
+    "displayName": "Type_project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "mappedBy": "type_projects"
+    }
+  }
+}

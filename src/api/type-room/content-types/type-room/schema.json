@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_rooms",
+  "info": {
+    "singularName": "type-room",
+    "pluralName": "type-rooms",
+    "displayName": "Type_room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "mappedBy": "type_rooms"
+    }
+  }
+}

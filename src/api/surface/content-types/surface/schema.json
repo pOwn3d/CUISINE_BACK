@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surfaces",
+  "info": {
+    "singularName": "surface",
+    "pluralName": "surfaces",
+    "displayName": "Surface",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "mappedBy": "surfaces"
+    }
+  }
+}

@@ -64,6 +64,33 @@
       "relation": "manyToMany",
       "target": "api::franchise.franchise",
       "inversedBy": "realisations"
+    },
+    "type_rooms": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type-room.type-room",
+      "inversedBy": "realisations"
+    },
+    "type_projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type-project.type-project",
+      "inversedBy": "realisations"
+    },
+    "surfaces": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::surface.surface",
+      "inversedBy": "realisations"
+    },
+    "city": {
+      "type": "string"
+    },
+    "franchise_star": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::franchise.franchise",
+      "inversedBy": "realisation_star"
     }
   }
 }
